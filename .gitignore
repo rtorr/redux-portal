@@ -4,3 +4,4 @@ node_modules
 dist
 coverage
 _book
+.DS_Store
