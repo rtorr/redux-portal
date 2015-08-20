@@ -1,6 +1,6 @@
 {
   "name": "redux-portal",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A portal that uses Redux",
   "main": "lib/index.js",
   "jsnext:main": "src/index.js",

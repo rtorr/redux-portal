@@ -1,10 +1,12 @@
 import PortalAppContainer from './containers/Root';
 import PortalContainer from './containers/Portal';
-import portal from './reducers/portal';
+import portalReducer from './reducers/portal';
+import rootReducer from './reducers/index';
 
 export default PortalAppContainer;
 
 export {
   PortalContainer,
-  portal
+  portalReducer,
+  rootReducer
 };
