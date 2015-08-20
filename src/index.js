@@ -1,8 +1,10 @@
-import Portal from './containers/Root';
-import reducer from './reducers/index';
+import PortalAppContainer from './containers/Root';
+import PortalContainer from './containers/Portal';
+import portal from './reducers/portal';
 
-export default Portal;
+export default PortalAppContainer;
 
 export {
-  reducer
+  PortalContainer,
+  portal
 };
