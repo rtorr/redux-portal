@@ -9,7 +9,7 @@ export default class extends Component {
   render() {
     return (
       <Provider store={store}>
-        {() => <Portal children={this.props.children} openByClickOn={this.props.openByClickOn} />}
+        <Portal children={this.props.children} openByClickOn={this.props.openByClickOn} />
       </Provider>
     );
   }

@@ -68,11 +68,12 @@
     }
   ],
   "peerDependencies": {
-    "react": "0.13.x",
-    "redux": "1.0.x"
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0",
+    "redux": "^3.0.0"
   },
   "dependencies": {
     "amp-merge": "^1.0.0",
-    "react-redux": "^0.8.2"
+    "react-redux": "^4.0.0"
   }
 }
