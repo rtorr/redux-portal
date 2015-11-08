@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import Portal from './../lib';
 
 var activeStyle = {
@@ -65,4 +66,4 @@ var Controller = React.createClass({
   }
 });
 
-React.render(<Controller />, document.getElementById('example'));
+ReactDOM.render(<Controller />, document.getElementById('example'));

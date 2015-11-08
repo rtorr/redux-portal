@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 
 var Portal = React.createClass({
 
@@ -19,7 +20,7 @@ var Portal = React.createClass({
 
   closePortal() {
     if (this.node) {
-      React.unmountComponentAtNode(this.node);
+      ReactDOM.unmountComponentAtNode(this.node);
       document.body.removeChild(this.node);
     }
     this.portal = null;
@@ -36,7 +37,7 @@ var Portal = React.createClass({
     if (!this.node) {
       this.node = document.createElement('div');
       document.body.appendChild(this.node);
-      this.portal = React.render(React.cloneElement(this.props.children, {handleClose: this.handleClose}), this.node);
+      this.portal = ReactDOM.render(React.cloneElement(this.props.children, {handleClose: this.handleClose}), this.node);
     }
     open();
   },
@@ -45,7 +46,7 @@ var Portal = React.createClass({
     switch (this.props.portal.active) {
       case true:
         if (this.node) {
-          this.portal = React.render(React.cloneElement(this.props.children, {handleClose: this.handleClose}), this.node);
+          this.portal = ReactDOM.render(React.cloneElement(this.props.children, {handleClose: this.handleClose}), this.node);
         }
         break;
       default:
